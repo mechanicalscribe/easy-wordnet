@@ -59,11 +59,23 @@ async function getSynsetFromPointer(pointer) {
 }
 
 async function addResultFromPointer(result, pointer) {
-	let newResult = JSON.parse(JSON.stringify(result));
+	// if (result.hasOwnProperty("lemma")) {
+	if (typeof result === "string") {
+		result = [ [ result ] ];
+	}
+
+	if (!pointer) {
+		pointer = {
+			synsetOffset: result[1],
+			pos: result[2]
+		};
+	}
+
 	return wordpos.seek(pointer.synsetOffset, pointer.pos).then(synset => {
-		newResult.chain.push(synset.lemma.replace(/_/g, " "));
-		newResult.next = synset;
-		return newResult;
+		result[0].push(synset.lemma);
+		result[1] = synset.synsetOffset;
+		result[2] = synset.pos;
+		return result;
 		// return [[result, synset.lemma], synset.synsetOffset, synset.pos];
 	});
 }
@@ -71,85 +83,64 @@ async function addResultFromPointer(result, pointer) {
 
 // For a single synset (many words return several if there are alternate meanings),
 // find the pointers of a given type and return the words and their synsets
-async function getPointersFromResult(result, pointer_type) {
+async function getPointersFromSynset(synset, pointer_type) {
+	// let origin = synset.lemma;
 	return new Promise((resolve, reject) => {
+		// let origin = synset.lemma;
+		let origin = synset.lemma;
 		let symbol = pointer_types[pointer_type];
-
-		if (!result.next) {
-			resolve(result);
-		}
-
-		/*
-		if (!result || !result[1] || !result[1].ptrs) {
-			// result[1] = "EOL";
-			resolve(result);
-			return;
-		}
-		*/
-
-		let pointers = result.next.ptrs.filter(d => {
+		let pointers = synset.ptrs.filter(d => {
 			return d.pointerSymbol === symbol;
 		});
+		let results = [];
 
 		if (pointers.length == 0) {
-			result.next = null;
-			resolve(result);
+			resolve(null);
 		}
 
-		let promises = pointers.map(pointer => {
+		let promises = pointers.map(d => {
 			// return getSynsetFromPointer(origin, d);
-			return addResultFromPointer(result, pointer);
+			return addResultFromPointer(origin, d);
 		});
 
 		resolve(Promise.all(promises));
 	});
 }
 
-async function getPointersFromResults(results, pointer_type) {
+async function getPointersFromSynsets(synsets, pointer_type) {
 	return new Promise((resolve, reject) => {
-		let promises = results.map(result => {
-			return getPointersFromResult(result, pointer_type);
+		let promises = synsets.map(d => {
+			return getPointersFromSynset(d, pointer_type);
 		});
 
 		resolve(Promise.all(promises));
 	});
 }
 
-async function followChain(word, pointer_type) {
-	let syns = await getWord(word);
+async function getHyponyms(arg) {
+	let syns = await getWord(arg);
 
-	let results = syns.map(syn => {
-		return {
-			chain: [syn.lemma],
-			next: syn
-		}
-	});
+	let r = await getPointersFromSynsets(syns, "hyponym");
 
-	let remaining = 1;
-	let count = 0;
-	let headers = [];
+	r = flattenOnce(r);
 
-	while (remaining > 0) {
-		//headers.push("word" + count);
-		results = await getPointersFromResults(results, "hyponym");
-		results = flattenOnce(results);
-		remaining = results.filter(d => d.next).length;
-		console.log(results.length, remaining);
-		// fs.writeFileSync("./results/" + word + count + ".json", JSON.stringify(results, null, 2));
-		count += 1;
-	}
+	console.log(r.length);
 
-	results = results.map(d => d.chain);
-	let csv = results.map(result => {
-		let chain = {};
-		for (let c = 0; c < result.length; c += 1) {
-			chain["word" + c] = result[c];
-		}
-		return chain;
-	});
-
-	fs.writeFileSync("./results/" + word + ".csv", dsv.csvFormat(csv));
+	fs.writeFileSync("./results/" + arg + ".json", JSON.stringify(r, null, 2));
 };
 
+async function expandHyponyms(arg) {
+	let results = require("./results/" + arg + ".json");
 
-followChain("molecule", "hyponym");
+	let syns = await getWord(arg);
+
+	let r = await getPointersFromSynsets(syns, "hyponym");
+
+	r = flattenOnce(r);
+
+	console.log(r.length);
+
+	fs.writeFileSync("./results/" + arg + ".json", JSON.stringify(r, null, 2));
+};
+
+getHyponyms("food");
