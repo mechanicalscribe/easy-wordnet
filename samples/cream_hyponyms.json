@@ -1,0 +1,334 @@
+[
+  {
+    "origin": "cream",
+    "origin_id": 8403766,
+    "synonyms": [
+      "cream",
+      "pick"
+    ],
+    "definition": "the best people or things in a group",
+    "relationship": "hyponym",
+    "child_words": null,
+    "child_synsets": null
+  },
+  {
+    "origin": "cream",
+    "origin_id": 3133170,
+    "synonyms": [
+      "cream",
+      "ointment",
+      "emollient"
+    ],
+    "definition": "toiletry consisting of any of various substances in the form of a thick liquid that have a soothing and moisturizing effect when applied to the skin",
+    "relationship": "hyponym",
+    "child_words": [
+      "cold_cream",
+      "hand_cream",
+      "lanolin",
+      "nard",
+      "sunscreen"
+    ],
+    "child_synsets": [
+      {
+        "synsetOffset": 3071343,
+        "lexFilenum": 6,
+        "lexName": "noun.artifact",
+        "pos": "n",
+        "wCnt": 4,
+        "lemma": "cold_cream",
+        "synonyms": [
+          "cold_cream",
+          "coldcream",
+          "face_cream",
+          "vanishing_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 3133170,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "a cream used cosmetically (mostly by women) for softening and cleaning the skin  ",
+        "def": "a cream used cosmetically (mostly by women) for softening and cleaning the skin  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 3489570,
+        "lexFilenum": 6,
+        "lexName": "noun.artifact",
+        "pos": "n",
+        "wCnt": 1,
+        "lemma": "hand_cream",
+        "synonyms": [
+          "hand_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 3133170,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "moisturizing cream for the hands  ",
+        "def": "moisturizing cream for the hands  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 3646164,
+        "lexFilenum": 6,
+        "lexName": "noun.artifact",
+        "pos": "n",
+        "wCnt": 1,
+        "lemma": "lanolin",
+        "synonyms": [
+          "lanolin"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 3133170,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "an emollient containing wool fat (a fatty substance obtained from the wool of sheep)  ",
+        "def": "an emollient containing wool fat (a fatty substance obtained from the wool of sheep)  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 3814751,
+        "lexFilenum": 6,
+        "lexName": "noun.artifact",
+        "pos": "n",
+        "wCnt": 2,
+        "lemma": "nard",
+        "synonyms": [
+          "nard",
+          "spikenard"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 3133170,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "an aromatic ointment used in antiquity  ",
+        "def": "an aromatic ointment used in antiquity  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 4364401,
+        "lexFilenum": 6,
+        "lexName": "noun.artifact",
+        "pos": "n",
+        "wCnt": 3,
+        "lemma": "sunscreen",
+        "synonyms": [
+          "sunscreen",
+          "sunblock",
+          "sun_blocker"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 3133170,
+            "pos": "n",
+            "sourceTarget": "0000"
+          },
+          {
+            "pointerSymbol": "%s",
+            "synsetOffset": 14998524,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "a cream spread on the skin; contains a chemical (as PABA) to filter out ultraviolet light and so protect from sunburn  ",
+        "def": "a cream spread on the skin",
+        "exp": [
+          "contains a chemical (as PABA) to filter out ultraviolet light and so protect from sunburn"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "cream",
+    "origin_id": 7863174,
+    "synonyms": [
+      "cream"
+    ],
+    "definition": "the part of milk containing the butterfat",
+    "relationship": "hyponym",
+    "child_words": [
+      "clotted_cream",
+      "double_creme",
+      "heavy_cream",
+      "light_cream",
+      "sour_cream",
+      "whipping_cream"
+    ],
+    "child_synsets": [
+      {
+        "synsetOffset": 7863429,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 2,
+        "lemma": "clotted_cream",
+        "synonyms": [
+          "clotted_cream",
+          "Devonshire_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          },
+          {
+            "pointerSymbol": ";r",
+            "synsetOffset": 8879115,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "thick cream made from scalded milk  ",
+        "def": "thick cream made from scalded milk  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 7863561,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 2,
+        "lemma": "double_creme",
+        "synonyms": [
+          "double_creme",
+          "heavy_whipping_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "cream with a fat content of 48% or more  ",
+        "def": "cream with a fat content of 48% or more  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 7863803,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 1,
+        "lemma": "heavy_cream",
+        "synonyms": [
+          "heavy_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "contains more than 36% butterfat  ",
+        "def": "contains more than 36% butterfat  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 7863893,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 3,
+        "lemma": "light_cream",
+        "synonyms": [
+          "light_cream",
+          "coffee_cream",
+          "single_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "cream that has at least 18% butterfat; \"in England they call light cream `single cream'\"  ",
+        "def": "cream that has at least 18% butterfat",
+        "exp": [
+          "in England they call light cream `single cream'"
+        ]
+      },
+      {
+        "synsetOffset": 7864069,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 2,
+        "lemma": "sour_cream",
+        "synonyms": [
+          "sour_cream",
+          "soured_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "artificially soured light cream  ",
+        "def": "artificially soured light cream  ",
+        "exp": []
+      },
+      {
+        "synsetOffset": 7864172,
+        "lexFilenum": 13,
+        "lexName": "noun.food",
+        "pos": "n",
+        "wCnt": 2,
+        "lemma": "whipping_cream",
+        "synonyms": [
+          "whipping_cream",
+          "light_whipping_cream"
+        ],
+        "lexId": "0",
+        "ptrs": [
+          {
+            "pointerSymbol": "@",
+            "synsetOffset": 7863174,
+            "pos": "n",
+            "sourceTarget": "0000"
+          }
+        ],
+        "gloss": "cream that has enough butterfat (30% to 36%) to be whipped  ",
+        "def": "cream that has enough butterfat (30% to 36%) to be whipped  ",
+        "exp": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "synsetOffset": 21445,
+    "lexFilenum": 3,
+    "lexName": "noun.Tops",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "food",
+    "synonyms": [
+      "food",
+      "nutrient"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 20270,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 2568489,
+        "pos": "a",
+        "sourceTarget": "0204"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1206811,
+        "pos": "v",
+        "sourceTarget": "0201"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 1467485,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "%p",
+        "synsetOffset": 7571428,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7571971,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7572202,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7576217,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7581905,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7586285,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7587918,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7816067,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7876605,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7897775,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7951744,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7954553,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 14606896,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 14607580,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 14923479,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "any substance that can be metabolized by an animal to give energy and build tissue  ",
+    "def": "any substance that can be metabolized by an animal to give energy and build tissue  ",
+    "exp": []
+  },
+  {
+    "synsetOffset": 7571428,
+    "lexFilenum": 13,
+    "lexName": "noun.food",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "food",
+    "synonyms": [
+      "food",
+      "solid_food"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 15071467,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "#p",
+        "synsetOffset": 21445,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7579074,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7588277,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7609120,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7617570,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7637670,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7665191,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7665463,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7714660,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7718107,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7718254,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7718387,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7721456,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7789214,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7789803,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7791351,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7792842,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7864314,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7865312,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7866305,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7954667,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "any solid substance (as opposed to liquid) that is used as a source of nourishment; \"food and drink\"  ",
+    "def": "any solid substance (as opposed to liquid) that is used as a source of nourishment",
+    "exp": [
+      "food and drink"
+    ]
+  },
+  {
+    "synsetOffset": 5819240,
+    "lexFilenum": 9,
+    "lexName": "noun.cognition",
+    "pos": "n",
+    "wCnt": 3,
+    "lemma": "food",
+    "synonyms": [
+      "food",
+      "food_for_thought",
+      "intellectual_nourishment"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 5817200,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 5819406,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "anything that provides mental stimulus for thinking  ",
+    "def": "anything that provides mental stimulus for thinking  ",
+    "exp": []
+  }
+]

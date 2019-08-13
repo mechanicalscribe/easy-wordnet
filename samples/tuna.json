@@ -1,0 +1,164 @@
+[
+  {
+    "synsetOffset": 11872617,
+    "lexFilenum": 20,
+    "lexName": "noun.plant",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "tuna",
+    "synonyms": [
+      "tuna",
+      "Opuntia_tuna"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 11872047,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "tropical American prickly pear of Jamaica  ",
+    "def": "tropical American prickly pear of Jamaica  ",
+    "exp": []
+  },
+  {
+    "synsetOffset": 7796603,
+    "lexFilenum": 13,
+    "lexName": "noun.food",
+    "pos": "n",
+    "wCnt": 3,
+    "lemma": "tuna",
+    "synonyms": [
+      "tuna",
+      "tuna_fish",
+      "tunny"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 7791881,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "#p",
+        "synsetOffset": 2629392,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7796850,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7796998,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7797183,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "important warm-water fatty fish of the genus Thunnus of the family Scombridae; usually served as steaks  ",
+    "def": "important warm-water fatty fish of the genus Thunnus of the family Scombridae",
+    "exp": [
+      "usually served as steaks"
+    ]
+  },
+  {
+    "synsetOffset": 2629392,
+    "lexFilenum": 5,
+    "lexName": "noun.animal",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "tuna",
+    "synonyms": [
+      "tuna",
+      "tunny"
+    ],
+    "lexId": "1",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 2626075,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 2515569,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "#m",
+        "synsetOffset": 2629220,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 2629667,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 2629922,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 2630162,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "%p",
+        "synsetOffset": 7796603,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "any very large marine food and game fish of the genus Thunnus; related to mackerel; chiefly of warm waters  ",
+    "def": "any very large marine food and game fish of the genus Thunnus",
+    "exp": [
+      "related to mackerel",
+      "chiefly of warm waters"
+    ]
+  },
+  {
+    "synsetOffset": 2529688,
+    "lexFilenum": 5,
+    "lexName": "noun.animal",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "tuna",
+    "synonyms": [
+      "tuna",
+      "Anguilla_sucklandii"
+    ],
+    "lexId": "3",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 2528752,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "New Zealand eel  ",
+    "def": "New Zealand eel  ",
+    "exp": []
+  }
+]

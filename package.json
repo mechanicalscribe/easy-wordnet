@@ -1,0 +1,31 @@
+{
+  "name": "easy-wordnet",
+  "version": "0.0.1",
+  "description": "Simplify the brilliant lexicography in WordNet 3.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mechanicalscribe/easy-wordnet.git"
+  },
+  "keywords": [
+    "wordnet",
+    "language",
+    "nlp",
+    "words"
+  ],
+  "author": "Chris Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mechanicalscribe/easy-wordnet/issues"
+  },
+  "homepage": "https://github.com/mechanicalscribe/easy-wordnet#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "d3-dsv": "^1.1.1",
+    "natural": "^0.6.3",
+    "wordpos": "^1.2.0"
+  }
+}

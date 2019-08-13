@@ -1,0 +1,37 @@
+[
+  {
+    "synsetOffset": 1740,
+    "lexFilenum": 3,
+    "lexName": "noun.Tops",
+    "pos": "n",
+    "wCnt": 1,
+    "lemma": "entity",
+    "synonyms": [
+      "entity"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 1930,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 2137,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 4431553,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)  ",
+    "def": "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)  ",
+    "exp": []
+  }
+]

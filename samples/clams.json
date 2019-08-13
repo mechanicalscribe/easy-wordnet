@@ -1,0 +1,381 @@
+[
+  {
+    "synsetOffset": 8403766,
+    "lexFilenum": 14,
+    "lexName": "noun.group",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "cream",
+    "synonyms": [
+      "cream",
+      "pick"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 8403286,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 678369,
+        "pos": "v",
+        "sourceTarget": "0201"
+      }
+    ],
+    "gloss": "the best people or things in a group; \"the cream of England's young men were killed in the Great War\"  ",
+    "def": "the best people or things in a group",
+    "exp": [
+      "the cream of England's young men were killed in the Great War"
+    ]
+  },
+  {
+    "synsetOffset": 7863174,
+    "lexFilenum": 13,
+    "lexName": "noun.food",
+    "pos": "n",
+    "wCnt": 1,
+    "lemma": "cream",
+    "synonyms": [
+      "cream"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 7859751,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 2425081,
+        "pos": "a",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 171352,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1420691,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863429,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863561,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863803,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863893,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7864069,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7864172,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "the part of milk containing the butterfat  ",
+    "def": "the part of milk containing the butterfat  ",
+    "exp": []
+  },
+  {
+    "synsetOffset": 3133170,
+    "lexFilenum": 6,
+    "lexName": "noun.artifact",
+    "pos": "n",
+    "wCnt": 3,
+    "lemma": "cream",
+    "synonyms": [
+      "cream",
+      "ointment",
+      "emollient"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 4454577,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1157347,
+        "pos": "a",
+        "sourceTarget": "0302"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1367186,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3071343,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3489570,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3646164,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3814751,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 4364401,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "toiletry consisting of any of various substances in the form of a thick liquid that have a soothing and moisturizing effect when applied to the skin  ",
+    "def": "toiletry consisting of any of various substances in the form of a thick liquid that have a soothing and moisturizing effect when applied to the skin  ",
+    "exp": []
+  },
+  {
+    "synsetOffset": 1420691,
+    "lexFilenum": 35,
+    "lexName": "verb.contact",
+    "pos": "v",
+    "wCnt": 1,
+    "lemma": "cream",
+    "synonyms": [
+      "cream"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 1420833,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": ";c",
+        "synsetOffset": 244785,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 7863174,
+        "pos": "n",
+        "sourceTarget": "0101"
+      }
+    ],
+    "gloss": "make creamy by beating; \"Cream the butter\"  ",
+    "def": "make creamy by beating",
+    "exp": [
+      "Cream the butter"
+    ]
+  },
+  {
+    "synsetOffset": 1415566,
+    "lexFilenum": 35,
+    "lexName": "verb.contact",
+    "pos": "v",
+    "wCnt": 6,
+    "lemma": "cream",
+    "synonyms": [
+      "cream",
+      "bat",
+      "clobber",
+      "drub",
+      "thrash",
+      "lick"
+    ],
+    "lexId": "3",
+    "ptrs": [
+      {
+        "pointerSymbol": "$",
+        "synsetOffset": 1418847,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 1104324,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 7491763,
+        "pos": "n",
+        "sourceTarget": "0501"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 7491763,
+        "pos": "n",
+        "sourceTarget": "0404"
+      }
+    ],
+    "gloss": "beat thoroughly and conclusively in a competition or fight; \"We licked the other team on Sunday!\"  ",
+    "def": "beat thoroughly and conclusively in a competition or fight",
+    "exp": [
+      "We licked the other team on Sunday!"
+    ]
+  },
+  {
+    "synsetOffset": 1367186,
+    "lexFilenum": 35,
+    "lexName": "verb.contact",
+    "pos": "v",
+    "wCnt": 1,
+    "lemma": "cream",
+    "synonyms": [
+      "cream"
+    ],
+    "lexId": "2",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 1366351,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 3133170,
+        "pos": "n",
+        "sourceTarget": "0101"
+      }
+    ],
+    "gloss": "put on cream, as on one's face or body; \"She creams her face every night\"  ",
+    "def": "put on cream, as on one's face or body",
+    "exp": [
+      "She creams her face every night"
+    ]
+  },
+  {
+    "synsetOffset": 1263582,
+    "lexFilenum": 35,
+    "lexName": "verb.contact",
+    "pos": "v",
+    "wCnt": 4,
+    "lemma": "skim",
+    "synonyms": [
+      "skim",
+      "skim_off",
+      "cream_off",
+      "cream"
+    ],
+    "lexId": "1",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 173351,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "^",
+        "synsetOffset": 679364,
+        "pos": "v",
+        "sourceTarget": "0401"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 9459435,
+        "pos": "n",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 4237021,
+        "pos": "n",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1265067,
+        "pos": "n",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "^",
+        "synsetOffset": 679364,
+        "pos": "v",
+        "sourceTarget": "0102"
+      }
+    ],
+    "gloss": "remove from the surface; \"skim cream from the surface of milk\"  ",
+    "def": "remove from the surface",
+    "exp": [
+      "skim cream from the surface of milk"
+    ]
+  },
+  {
+    "synsetOffset": 171352,
+    "lexFilenum": 30,
+    "lexName": "verb.change",
+    "pos": "v",
+    "wCnt": 1,
+    "lemma": "cream",
+    "synonyms": [
+      "cream"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 169614,
+        "pos": "v",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 7863174,
+        "pos": "n",
+        "sourceTarget": "0101"
+      }
+    ],
+    "gloss": "add cream to one's coffee, for example  ",
+    "def": "add cream to one's coffee, for example  ",
+    "exp": []
+  }
+]

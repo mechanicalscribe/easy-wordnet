@@ -1,0 +1,15 @@
+{
+	"antonym": "!",
+	"hypernym": "@",
+	"instance_hypernym": "@i",
+	"hyponym": "~",
+	"instance_hyponym": "~i",
+	"member_holonym": "#m",
+	"substance_holonym": "#s",
+	"part_holonym": "#p",
+	"member_meronym": "%m",
+	"substance_meronym": "%s",
+	"part_meronym": "%p",
+	"attribute": "=",
+	"related_form": "+"
+}

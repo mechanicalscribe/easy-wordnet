@@ -1,0 +1,178 @@
+[
+  {
+    "synsetOffset": 8403766,
+    "lexFilenum": 14,
+    "lexName": "noun.group",
+    "pos": "n",
+    "wCnt": 2,
+    "lemma": "cream",
+    "synonyms": [
+      "cream",
+      "pick"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 8403286,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 678369,
+        "pos": "v",
+        "sourceTarget": "0201"
+      }
+    ],
+    "gloss": "the best people or things in a group; \"the cream of England's young men were killed in the Great War\"  ",
+    "def": "the best people or things in a group",
+    "exp": [
+      "the cream of England's young men were killed in the Great War"
+    ]
+  },
+  {
+    "synsetOffset": 7863174,
+    "lexFilenum": 13,
+    "lexName": "noun.food",
+    "pos": "n",
+    "wCnt": 1,
+    "lemma": "cream",
+    "synonyms": [
+      "cream"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 7859751,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 2425081,
+        "pos": "a",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 171352,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1420691,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863429,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863561,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863803,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7863893,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7864069,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 7864172,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "the part of milk containing the butterfat  ",
+    "def": "the part of milk containing the butterfat  ",
+    "exp": []
+  },
+  {
+    "synsetOffset": 3133170,
+    "lexFilenum": 6,
+    "lexName": "noun.artifact",
+    "pos": "n",
+    "wCnt": 3,
+    "lemma": "cream",
+    "synonyms": [
+      "cream",
+      "ointment",
+      "emollient"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 4454577,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1157347,
+        "pos": "a",
+        "sourceTarget": "0302"
+      },
+      {
+        "pointerSymbol": "+",
+        "synsetOffset": 1367186,
+        "pos": "v",
+        "sourceTarget": "0101"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3071343,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3489570,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3646164,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 3814751,
+        "pos": "n",
+        "sourceTarget": "0000"
+      },
+      {
+        "pointerSymbol": "~",
+        "synsetOffset": 4364401,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "toiletry consisting of any of various substances in the form of a thick liquid that have a soothing and moisturizing effect when applied to the skin  ",
+    "def": "toiletry consisting of any of various substances in the form of a thick liquid that have a soothing and moisturizing effect when applied to the skin  ",
+    "exp": []
+  }
+]

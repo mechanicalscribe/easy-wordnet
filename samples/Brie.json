@@ -1,0 +1,27 @@
+[
+  {
+    "synsetOffset": 7868590,
+    "lexFilenum": 13,
+    "lexName": "noun.food",
+    "pos": "n",
+    "wCnt": 1,
+    "lemma": "Brie",
+    "synonyms": [
+      "Brie"
+    ],
+    "lexId": "0",
+    "ptrs": [
+      {
+        "pointerSymbol": "@",
+        "synsetOffset": 7866305,
+        "pos": "n",
+        "sourceTarget": "0000"
+      }
+    ],
+    "gloss": "soft creamy white cheese; milder than Camembert  ",
+    "def": "soft creamy white cheese",
+    "exp": [
+      "milder than Camembert"
+    ]
+  }
+]
