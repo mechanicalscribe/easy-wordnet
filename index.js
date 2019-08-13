@@ -24,6 +24,18 @@ let flatten = function(array) {
 	return output;
 }
 
+let flattenOnce = function(array) {
+	let output = [];
+	for (let i = 0; i < array.length; i += 1) {
+		if (Array.isArray(array[i])) {
+			output = output.concat(array[i]);
+		} else {
+			output.push(array[i]);
+		}
+	}
+	return output;
+}
+
 function getSample(word) {
 	wordpos.lookupNoun(word).then(synsets => {
 		fs.writeFileSync(`./samples/${ word }.json`, JSON.stringify(synsets, null, 2));		
@@ -40,16 +52,41 @@ async function getWord(word) {
 }
 
 // return a Promise getting a pointer
-async function getPointer(pointer) {
+async function getSynsetFromPointer(pointer) {
 	return wordpos.seek(pointer.synsetOffset, pointer.pos).then(synset => {
 		return synset;
 	});
 }
 
+async function addResultFromPointer(result, pointer) {
+	// if (result.hasOwnProperty("lemma")) {
+	if (typeof result === "string") {
+		result = [ [ result ] ];
+	}
+
+	if (!pointer) {
+		pointer = {
+			synsetOffset: result[1],
+			pos: result[2]
+		};
+	}
+
+	return wordpos.seek(pointer.synsetOffset, pointer.pos).then(synset => {
+		result[0].push(synset.lemma);
+		result[1] = synset.synsetOffset;
+		result[2] = synset.pos;
+		return result;
+		// return [[result, synset.lemma], synset.synsetOffset, synset.pos];
+	});
+}
+
+
 // For a single synset (many words return several if there are alternate meanings),
 // find the pointers of a given type and return the words and their synsets
-async function getPointers(synset, pointer_type) {
+async function getPointersFromSynset(synset, pointer_type) {
+	// let origin = synset.lemma;
 	return new Promise((resolve, reject) => {
+		// let origin = synset.lemma;
 		let origin = synset.lemma;
 		let symbol = pointer_types[pointer_type];
 		let pointers = synset.ptrs.filter(d => {
@@ -62,143 +99,48 @@ async function getPointers(synset, pointer_type) {
 		}
 
 		let promises = pointers.map(d => {
-			return getPointer(d);
+			// return getSynsetFromPointer(origin, d);
+			return addResultFromPointer(origin, d);
 		});
 
 		resolve(Promise.all(promises));
-
-		/*
-		async.eachSeries(pointers, function(pointer, cb) {
-			let synset = await getPointer(pointer);
-			results.push(synset);
-			cb();
-			wordpos.seek(pointer.synsetOffset, pointer.pos).then(synset => {
-				//console.log(synset.lemma)
-				results.push(synset);
-				cb();
-			});
-		}, function() {
-			resolve(results);
-		});
-		*/
 	});
 }
 
-// Above function for groups of synsets
-function getPointersBySynsets(synsets, pointer_type) {
-	let result_pairs = [];
-
+async function getPointersFromSynsets(synsets, pointer_type) {
 	return new Promise((resolve, reject) => {
-		async.each(synsets, function(synset, cb) {
-			let origin = synset.lemma;
-			let definition = synset.def;
-			let synonyms = synset.synonyms;
-			let id = synset.synsetOffset;
-
-			getPointers(synset, pointer_type, function(results) {
-				result_groups.push({
-					origin: origin,
-					origin_id: id,
-					synonyms: synonyms,
-					definition: definition.trim(),
-					relationship: pointer_type,
-					child_words: results ? results.map(d => { return d.lemma; }) : null,
-					child_synsets: results || null
-				});
-				cb();
-			});
-		}, function() {
-			resolve(result_pairs);
+		let promises = synsets.map(d => {
+			return getPointersFromSynset(d, pointer_type);
 		});
+
+		resolve(Promise.all(promises));
 	});
 }
 
+async function getHyponyms(arg) {
+	let syns = await getWord(arg);
 
-var pointerGroup = [];
+	let r = await getPointersFromSynsets(syns, "hyponym");
 
-function getSynsetsPointersByTypeRecursive(synsets, pointer_type, callback, depth) {
-	if (!depth) {
-		depth = 0;
-	}
+	r = flattenOnce(r);
 
-	console.log("DEPTH", depth);
+	console.log(r.length);
 
-	if (depth === 0) {
-		synsets.forEach(synset => {
-			pointerGroup.push({
-				source: synset.lemma,
-				target: null,
-				source_id: synset.synsetOffset,
-				target_id: null,
-				relationship: "self",
-				depth: depth,
-				definition: synset.def.trim()
-			});			
-		});
-	}
-
-	getSynsetsPointersByType(synsets, pointer_type, function(results) {
-		if (!results || results.length === 0) {
-			callback();
-			return;
-		}
-
-		let cbs = 0;
-
-		results.forEach(result => {
-			// console.log(result.origin, synset.lemma, depth);
-			if (result.child_synsets) {
-				result.child_synsets.forEach(synset => {
-					pointerGroup.push({
-						source: result.origin,
-						target: synset.lemma,
-						source_id: result.origin_id,
-						target_id: synset.synsetOffset,
-						relationship: pointer_type,
-						depth: depth
-					});					
-				});
-				getSynsetsPointersByTypeRecursive(result.child_synsets, pointer_type, callback, depth + 1);
-				cbs += 1;
-			}
-		});
-		if (cbs == 0) {
-			callback();
-		}
-	});	
-}
-
-
-function getHypernyms(word, callback) {
-	let word_data = {
-		word: word,
-		definitions: []
-	};
-
-	wordpos.lookupNoun(word, synsets => {
-		getSynsetsPointersByTypeRecursive(synsets, "hypernym", function() {
-			callback(pointerGroup);
-		});
-
-		/*
-		getSynsetsPointersByType(synsets, "hyponym", function(results) {
-			if (results.length === 0) {
-				callback(null);
-			} else {
-				callback(results);
-			}
-		});
-		*/
-
-	});
-}
-
-
-async function test(arg) {
-	// let r = await getWord(arg);
-	// console.log(JSON.stringify(r, null, 2));
-	let r = await getPointers(arg, "hypernym");
-	console.log(JSON.stringify(r, null, 2));
+	fs.writeFileSync("./results/" + arg + ".json", JSON.stringify(r, null, 2));
 };
 
-test(synsets[1]);
+async function expandHyponyms(arg) {
+	let results = require("./results/" + arg + ".json");
+
+	let syns = await getWord(arg);
+
+	let r = await getPointersFromSynsets(syns, "hyponym");
+
+	r = flattenOnce(r);
+
+	console.log(r.length);
+
+	fs.writeFileSync("./results/" + arg + ".json", JSON.stringify(r, null, 2));
+};
+
+getHyponyms("food");
